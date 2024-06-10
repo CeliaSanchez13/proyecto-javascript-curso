@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de reservas - Hotel Phoenix</title>
+    <link rel="stylesheet" href="./style.css">
+    
+  </head>
+  <body>
+    <h1>Registro de reservas - Hotel Phoenix</h1>
+    <div id="modulo_formu">
+      <div class="modulos">
+        <form id="registrarFormu">
+          <label for="nombre">Nombre huésped</label>
+          <input type="text" id="nombre" name="nombre" required /><br>
+
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required /><br>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="tlf" name="tlf" required /><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="dias">Cantidad de días de estadía:</label>
+          <input type="number" id="dias" name="dias" required><br>
+
+          <label for="hab">Tipo de habitación:</label>
+          <select id="hab" name="hab" required>
+            <option value="Individual">Individual</option>
+            <option value="Doble">Doble</option>
+            <option value="Suite">Suite</option>
+          </select><br>
+
+          <button type="button" id="registrar">Registrar huésped</button>
+        </form>
+      </div>
+      <div class="modulos">
+        <table border="1">
+          <tr>
+            <th>Tipo de habitación</th>
+            <th>Precio por Noche</th>
+          </tr>
+          <tr>
+            <td>Individual</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Doble</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>Suite</td>
+            <td>150</td>
+          </tr>
+        </table>
+      </div>
+    </div> 
+    <div id="erroresList" class="error"></div>
+    <div id="info_huesped"></div>
+    <script src="main.js"></script> <!-- Hay que poner la vinculacion del JS al final del body para que no ocurra error del DOM-->
+  </body>
+</html>

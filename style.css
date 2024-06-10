@@ -1,0 +1,13 @@
+#modulo_formu{
+    display: flex;
+    margin: auto 50px;
+}
+
+.modulos{
+    margin: auto 50px;
+}
+
+.error{
+    color: red;
+}
+
